@@ -1,5 +1,6 @@
 require_relative "../config/environment.rb"
 require 'pry'
+
 class Student
 
   attr_accessor :name, :grade
@@ -66,7 +67,3 @@ class Student
 
 end
 
-
-
-
-end
