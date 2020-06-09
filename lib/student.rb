@@ -1,9 +1,9 @@
 require_relative "../config/environment.rb"
-require 'pry'
 
 class Student
 
-  attr_accessor :name, :grade, :id
+  attr_accessor :name, :grade
+  attr_reader :id
 
   def initialize(name, grade, id=nil)
     @id = id
@@ -61,7 +61,6 @@ class Student
         SQL
 
         row = DB[:conn].execute(sql)
-        binding.pry
     end
 
     def update
