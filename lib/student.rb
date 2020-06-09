@@ -66,4 +66,3 @@ class Student
     end
 
 end
-
